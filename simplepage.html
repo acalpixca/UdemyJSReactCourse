@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Simple page</title>
+      <meta charset="utf-8"></meta>
+   </head>
+   <body>
+      <h1 id="header">Simple page</h1>
+      <ul class="list">
+         <li>uno</li>
+         <li>dos</li>
+         <li>tres</li>
+      </ul>
+      <button onclick="console.log(getElementsByAttribute('id','header'));">Lanza</button>
+      <!-- document.write(getElementsByAttribute(document.getElementsByTagName("head")[0],"id","header")); -->
+   </body>
+   <script type="text/javascript">
+      /* var enlace=document.createElement("a");
+      enlace.innerHTML="clica aquí";
+      var atri=document.createAttribute("href");
+      atri.value="http://breves.lavigilanta.info";
+      enlace.setAttributeNode(atri);
+      atri=document.createAttribute("target");
+      atri.value="_blank";
+      enlace.setAttributeNode(atri);
+      document.body.appendChild(enlace);
+*/
+
+      function getElementsByAttribute(atri, valor){
+         var resul=[];
+         var elements=document.getElementsByTagName('*');
+         for (var i=0;i<elements.length;i++) {
+            if (elements[i].getAttribute(atri)===valor) {
+               resul.push(elements[i]);
+            }
+         }
+         return(resul);
+      }
+
+      // console.log(getElementsByAttribute(document.getElementsByTagName("head")[0],"id","header"));
+   </script>
+</html>
