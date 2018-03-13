@@ -21,6 +21,7 @@ querySelector('.list').children
 --> you cannot apply children to somehting that is a list, not an object.
 children returns a list. To pick one element: ...children[0];
 
+Importante aquí las expresiones regulares. Digamos que * significa "cualquier string" :-)
 ### Attributes that you can alter:
 .innerHTML
 (ojo, que en jQuery esto sería una función: elemento.html("lo nuevo"), pero usando DOM es mediante una asignación)
