@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8"/>
+   <title>Probando eventos</title>
+</head>
+<body>
+   <h1>Probando eventos</h1>
+   <p>Uno de los símbolos más usados del judaísmo y de Israel, la menorá se originó en la época en que Dios le ordenó a Moisés que construyera el Tabernáculo. El candelabro de siete lámparas permaneció en el Templo de Salomón y de su sucesor, y también está presente en la fe cristiana, en algunas iglesias.</p>
+   <p>Primeramente, su luz simboliza la presencia de Dios entre los hombres, pero hay una serie de otros significados, según especialistas. Unos afirman que representa al arbusto en llamas que Moisés vio en el desierto, por medio del cual Dios le habló al profeta. Otros sostienen que se parece al Árbol de la Vida.</p>
+   <p>La primera menorá fue detalladamente descripta por Dios a Moisés, que debía encargarse de su producción en una sola pieza grande de oro, con un mástil principal y seis brazos salidos de cada lado, con un recipiente en cada una de esas siete puntas, que recibirían el aceite que sería encendido, con adornos de flores y almendros. (Éxodo 25:31-40). Hasta los utensilios para usar el candelabro debían ser de oro puro (el matacandela y la despabiladera). La llama del mástil central era llamada “auxiliar”, cuyo fuego servía para alimentar a los otros seis.</p>
+   <button id="boton1">Botón 1</button>
+   <button id="boton2">Botón 2</button>
+   <p>Aarón y los sacerdotes que lo sucedieron debían encender la menorá todos los días por la mañana, reemplazando el aceite y limpiando las lámparas.</p>
+</body>
+<script type="text/javascript">
+   document.getElementById("boton1").addEventListener("click",function(event){
+      alert("clicky clicky");
+   });
+   document.getElementById("boton2").addEventListener("mouseover",function(event){
+      document.getElementById("boton2").innerText="me has rozado";
+   });
+
+// Creation of a custom event
+   document.body.addEventListener("timeEvent",aFunction); // timeEvent is my custom event
+   function aFunction(e){ // this is the callback function used above
+      alert("Event time is: " + e.detail);
+   }
+   var myEvent=new CustomEvent('timeEvent',{ // this is the creation of the custom event added above
+      detail: new Date()
+   });
+</script>
+</html>
