@@ -50,7 +50,7 @@ fetch('https://api.github.com/users/acalpixca') // this creates the promise. fet
 .then(function(j){
    console.log(j); // this is another promise, we could continue with the daisychain!
 })
-
+```
 #### More resources to fully understand promises:
 * https://developers.google.com/web/fundamentals/primers/promises
 * https://dev.to/damcosset/i-promise-i-wont-callback-anymore-cp3
