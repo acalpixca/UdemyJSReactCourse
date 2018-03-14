@@ -32,7 +32,7 @@ ajaxRequest.open("GET", "https://api.github.com/users/acalpixca", true); // crea
 ajaxRequest.send(); // enviamos la request.
 ```
 ### Second example: The Promises way
-It's based on the Fetch API, so we won't be using XMLHttpRequest now. This is the most modern and preferred method.
+It's based on the Fetch API, so we won't be using XMLHttpRequest now. This is the most modern and preferred method. Note that it does NOT work with Internet Explorer (¡y lo he comprobado!)
 
 **Promises**: JavaScript objects that can be returned synchronously from an asynchronous function.
 They can have 3 status:
