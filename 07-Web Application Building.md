@@ -56,3 +56,6 @@ https://gruntjs.com
 A JavaScript task grunter.This means that it does the grunt work for you, ie. the boring repetitive stuff.
 For example, if you write your code in CoffeeScript, you can set a watch to check when a .coffee file is modified, and then a transpiler can translate it to JavaScript, and then a minifier can minify the JavaScript file because changes to js files were also being watched by Grunt.
 And this is an example: https://github.com/malizmaj/node-example-app
+
+And now for a complete Grunt example:
+https://github.com/babel/grunt-babel
