@@ -4,6 +4,7 @@ import Mousetrap from 'mousetrap';
 class Konami extends Component {
    constructor(){
       super();
+      this.popUp = this.popUp.bind(this);
    }
 
    componentDidMount() {
@@ -16,12 +17,12 @@ class Konami extends Component {
    }
 
    popUp(){
-      alert('The Konami code happened!');
+      alert(`You input the Konami code ${this.props.name.length > 1 ? ` , ${this.props.name}!` : `!`}`);
    }
 
   render() {
     return (
-      <div>Hello this is Konami!</div>
+      <div>Hello {this.props.name}, this is Konami!</div>
     );
   }
 }
