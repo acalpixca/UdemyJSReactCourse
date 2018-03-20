@@ -15,6 +15,13 @@ It does everything that the V in the Model-View-Controller does, and throws out 
 
 This is the official site of React: https://reactjs.org
 
+Just pay attention to the license. React is owned by Facebook. Last year, WordPress decided to move away from it as to not have any license liabilities in the future.
+https://ma.tt/2017/09/on-react-and-wordpress/
+But then when folks were discussing this, and possible replacements for React...
+https://github.com/wordpress/gutenberg/issues/2733
+...Facebook changed the React license to a MIT license, so it's cool again ;-)
+https://code.facebook.com/posts/300798627056246
+
 ### Where React lives
 It lives within a single DIV in your web application's body. And this is amazing ;-) and super easy to incorporate it within existing applications.
 
@@ -52,6 +59,7 @@ But wait, what is that HTML in the middle of JavaScript, not as a string? That i
 
 ### JSX
 JSX is a strictly typed OO programming language that compiles to JavaScript. It adds templating for components which is something very useful for React.
+
 This means that when you're writing code in JSX you can use the HTML looking code that we can see in the code box above! It feels more natural than the DOM-manipulating-style equivalent.
 
-### Intro to Component Lifecycle Methods
+It's also used in Webpack.
