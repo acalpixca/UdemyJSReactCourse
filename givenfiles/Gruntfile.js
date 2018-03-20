@@ -1,5 +1,5 @@
-require('load-grunt-tasks')(grunt);
 module.exports = function(grunt){
+   //require("load-grunt-tasks")(grunt);
    grunt.initConfig({
       name: 'class',
       watch: {
@@ -11,7 +11,7 @@ module.exports = function(grunt){
             src: ['index.js', 'logger.js'],
             dest: 'dist/bundle.js'
          }
-      },
+      }  /* ,
       // esto lo he puesto yo
       babel: {
          options: {
@@ -23,7 +23,7 @@ module.exports = function(grunt){
                'dist/app.js': 'src/app.js'
             }
          }
-      }
+      } */
       // fin de lo mío
    });
 
@@ -33,10 +33,13 @@ module.exports = function(grunt){
    grunt.registerTask('updated', () => {
          grunt.log.writeln(`It updated again!`);
    });
+   //
 
-   grunt.registerTask('default',['babel']);
-   /* grunt.registerTask('default', () => {
+   // grunt.registerTask('babel',['babel']); // No acaba de funcionar!
+
+// 
+   grunt.registerTask('default', () => {
       grunt.log.writeln(`Hello, ${grunt.config.get('name')}!`);
-   });*/
+   });
 
 };

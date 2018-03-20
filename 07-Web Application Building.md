@@ -57,5 +57,32 @@ A JavaScript task grunter.This means that it does the grunt work for you, ie. th
 For example, if you write your code in CoffeeScript, you can set a watch to check when a .coffee file is modified, and then a transpiler can translate it to JavaScript, and then a minifier can minify the JavaScript file because changes to js files were also being watched by Grunt.
 And this is an example: https://github.com/malizmaj/node-example-app
 
-And now for a complete Grunt example:
+And now for a complete Grunt example: folder "givenfile". Modify the Gruntfile.js so that you can use babel to transpile ES6+ to classic JavaScript.
 https://github.com/babel/grunt-babel
+
+### gulp
+Similar to Grunt. Referred to as the streaming built system. It has thousands of modules and plugins and you can automate the tedious, repetitive tasks very easily - a task  is just JavaScript and you can tweak it as much as you want.
+
+To describe the tasks it uses something very similar to promises, but with the word *pipe* instead of *then*
+
+We do an example on folder *gulpactivity*, where we create a web site as a portfolio of all our activities so far.
+
+We build it with handlebars, a package that helps create templates of web pages.
+* we have an index.hbs which contains a template for the homepage.
+* we have a folder partials where we have hbs files which represent parts included in that homepage.
+
+### Webpack
+Most recent in the market, growing in popularity. It doesn't focus so much on job automation as it does on bundling packages for you.
+
+4 main concepts:
+* Entry: first file to kick off your app.
+* Output: it tells Webpack where your code should go and it tells it how to treat the bundled code.
+* Loaders: loaders explains how to process non JavaScript modules, and include these dependencies into your bundles.
+* Plugins: Can do what loaders can't.
+
+We won't cover them in detail here because we'll be using Webpack all the time when we do React.
+
+Some resources:
+* https://webpack.js.org
+* https://github.com/dabit3/beginning-webpack
+* An excellent beginners guide: https://medium.com/javascript-training/beginner-s-guide-to-webpack-b1f1a3638460
