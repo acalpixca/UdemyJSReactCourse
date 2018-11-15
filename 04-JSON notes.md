@@ -22,7 +22,7 @@ The value can be a string, array, number, object, boolean expression.
 * JSON.stringify() --> converts JSON into a string.
 * JSON.parse() --> converts a string into a JSON object.
 
-### Mixing AXAX / fetch() with JSON
+### Mixing AJAX / fetch() with JSON
 ``` javaScript
 function getUser(name) {
   fetch('https://api.github.com/users/' + name) // haces la llamada
