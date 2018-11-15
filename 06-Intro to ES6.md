@@ -220,6 +220,7 @@ a very BIG hello
 to you, MY IBIS
 */
 ```
+Line breaks are considered in template literals! so you don't have to use \\n to get one.
 
 ### Arrow functions
 Declaration of functions, old style:
