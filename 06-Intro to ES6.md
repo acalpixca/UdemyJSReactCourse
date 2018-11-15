@@ -94,7 +94,7 @@ function example(x=20, y=30){
 ```
 Default values can be values, expressions or functions.
 ```JavaScript
-function anotherExample(x=3, y=5^*x, z=example(x)){
+function anotherExample(x=3, y=5*x, z=example(x)){
    /...
 }
 ```
