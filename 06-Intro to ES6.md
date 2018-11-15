@@ -248,3 +248,29 @@ Key aspects about Arrow functions:
 * They are function expressions.
 * They are anonymous.
 * They redefine *this* --> Lex binding is lexical, or static. I.e. it doesn't have its own this, it uses the this of the scope where the function was called! So binding doesn't work here.
+
+Example, when defining an event handler.
+
+Normal function:
+
+``` JavaScript
+var control = {
+  makeRequest: function (...) {
+    var self = this; // so that I can pass this to the function below, that has its own this!
+    btn.addEventListener('click', function(){
+      self.doSomething(...);
+    });
+  }
+}
+```
+Arrow function:
+
+``` JavaScript
+var control = {
+  makeRequest(...) {
+    btn.addEventListener('click', ()=> {
+      this.doSomething(...); // this is the this of makeRequest, because the arrow function doesn't have a this
+    });
+  }
+}
+```
