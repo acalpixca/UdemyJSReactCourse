@@ -37,7 +37,7 @@ Hoisting: something that JavaScript does: move all function and variable declara
    var a=2;
    console.log(a+ " " + b);
    var b=3;
-})();]
+})();
 ```
 The code above is translated to the following by hoisting, and this is what is actually ran:
 ``` JavaScript
@@ -47,7 +47,7 @@ The code above is translated to the following by hoisting, and this is what is a
    a=2;
    console.log(a+ " " + b);
    b=3;
-})();]
+})();
 ```
 -> so running it, the result is "2 Undefined", but it runs.
 
@@ -58,7 +58,7 @@ The use of let is that hoisting does not afect declarations made with let or wit
    let a=2;
    console.log(a+ " " + b);
    let b=3;
-})();]
+})();
 ```
 -> Running this, we would get an UncaughtReferenceError, because b is used before it's declared.
 
