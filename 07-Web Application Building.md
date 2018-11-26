@@ -57,6 +57,19 @@ A JavaScript task grunter.This means that it does the grunt work for you, ie. th
 For example, if you write your code in CoffeeScript, you can set a watch to check when a .coffee file is modified, and then a transpiler can translate it to JavaScript, and then a minifier can minify the JavaScript file because changes to js files were also being watched by Grunt.
 And this is an example: https://github.com/malizmaj/node-example-app
 
+* watch: monitors a file for changes. When these occur, actions take place.
+``` javascript
+watch: {
+    sass: {
+      files: '**/*.scs',
+      tasks: ['css','another'],
+      options: {
+        something: 'value'
+      }
+    }
+
+}
+```
 And now for a complete Grunt example: folder "givenfile". Modify the Gruntfile.js so that you can use babel to transpile ES6+ to classic JavaScript.
 https://github.com/babel/grunt-babel
 
