@@ -6,6 +6,7 @@ Every component that you make in React has a state and properties.
 State = condition of a specific program at a given moment.
 
 React state is data that is specific to the current Component and it can change as the user interacts with it.
+
 It's a plain JavaScript object that is initialized in the constructor and can be modified throughout the component's lifecycle.
 
 A state can be anything: a number, a string, an object, even a promise...
