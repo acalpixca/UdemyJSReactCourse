@@ -55,7 +55,7 @@ The project structure goes like this:
    - index.html has that <div id="root"> that will contain the application.
 - src --> here you find the application code, amongst it...
    - index.js --> it's the JSX code that links the app with the html file by means of something like this:
-      - ReactDOM.render(<App />, document.getElementById('root'));
+      - ReactDOM.render(\\<App \\/\\>, document.getElementById('root'));
    - App.js --> this is what gets embedded in the index.html. So it implements the render() function for App, and this one incorporates the different Components.
    ``` JavaScript
    import React, { Component } from 'react';
