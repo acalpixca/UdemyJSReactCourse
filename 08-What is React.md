@@ -8,7 +8,7 @@ Formal definition: JS library for building user interfaces.
 It does everything that the V in the Model-View-Controller does, and throws out the useless parts.
 
 3 reasons to use React:
-* Reusable and stateful components: They are very similar to simple functions: you give them input and they give you output in return. The output is "user interfaces".
+* Reusable and stateful components: They are very similar to simple functions: you give them input (properties and state) and they give you output in return. The output is "user interfaces".
 * Reactive updates: When a component changes, React automatically changes the user interface, you don't have to develop it. "It reacts to changes", hence its name.
 * The Virtual DOM: It acts as an agent between the real DOM and you, the developer. It only refreshes the parts of the DOM that have changed. In execution it's always faster than working directly with "the real DOM", because the browser doesn't have to render a thousand changes. Users can't see the Virtual DOM.
    - So you write how you want your page to look like. The Virtual DOM compares that desired end state with the current situation in the browse, aka what the browser is showing now, and it works out the difference.
