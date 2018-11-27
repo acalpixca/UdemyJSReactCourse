@@ -70,6 +70,9 @@ watch: {
 
 }
 ```
+* To add watch functionality, you need to install stuff: npm install grunt-contrib-watch
+* To add uglify functionality, idem npm install grunt-contrib-uglify
+
 And now for a complete Grunt example: folder "givenfile". Modify the Gruntfile.js so that you can use babel to transpile ES6+ to classic JavaScript.
 https://github.com/babel/grunt-babel
 
@@ -99,3 +102,10 @@ Some resources:
 * https://webpack.js.org
 * https://github.com/dabit3/beginning-webpack
 * An excellent beginners guide: https://medium.com/javascript-training/beginner-s-guide-to-webpack-b1f1a3638460
+
+### Recap
+
+* Project: the codebase you're working with (application, framework, plugin, library...)
+* Module: unit of source code (a file, a function within a file) that provides functionality. A module may depend on another module.
+* Package: A collection of one or more modules that is published somewhere so that others can use it.
+* Package Manager: A tool that installs a package into your system. Examples: npm, yarn.

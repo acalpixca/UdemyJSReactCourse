@@ -4,10 +4,17 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "grunt": "^1.0.3",
+    "grunt-babel": "^8.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "gulp": "^3.9.1",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-rename": "^1.2.2",
-    "handlebars": "^4.0.11"
+    "handlebars": "^4.0.11",
+    "load-grunt-tasks": "^4.0.0"
   },
   "devDependencies": {},
   "scripts": {
