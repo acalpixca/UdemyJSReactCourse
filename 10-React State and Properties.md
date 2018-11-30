@@ -31,3 +31,7 @@ More info: https://www.tutorialspoint.com/reactjs/reactjs_props_overview.htm
 
 ### Adding states and props to the Konami app we created on 09
 Watch video 12 :-)
+Useful tip: while writing JSX, when you want to incorporate some JavaScript code in the pseudo-html which is JSX, you need to write it between curly braces, like this:
+```JavaScript
+<button onClick={this.toggleActivation()}>Toggle Konami Code!</button>
+```

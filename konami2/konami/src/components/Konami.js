@@ -3,10 +3,10 @@ import Mousetrap from 'mousetrap';
 
 class Konami extends Component {
 
-  constructor(){
+/*  constructor(){
     super();
   }
-
+*/
   componentDidMount(){
     Mousetrap.bind([`1 2 3 4`, `up up down down left right left right b a`], this.popUp);
   }
@@ -20,7 +20,7 @@ popUp(){
 }
   render() {
     return (
-      <div>Hello this is Konami!</div>
+      <div>Hello {this.props.name}, this is Konami!</div>
     );
   }
 }
