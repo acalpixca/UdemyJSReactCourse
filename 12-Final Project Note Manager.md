@@ -29,8 +29,16 @@ The final project (my version) is in note-manager.
 
 Cassidy's final version is in markdown-manager.
 
-## To learn more ;-)
+## To learn more about React ;-)
 
 * Build with React: http://buildwithreact.com
 * React Tutorials and Insights: https://www.codementor.io/community/topic/reactjs
 * React Reference: https://www.codecademy.com/articles/bwa-react-reference
+
+## To learn more in general :-)
+
+* JavaScript Classes by Wes Bos: http://wesbos.com/courses/
+* JavaScript Language Reference: https://docs.microsoft.com/en-us/scripting/javascript/javascript-language-reference
+* Creative Coding Club: http://creativecoding.club/
+* React Practice Projects: https://daveceddia.com/react-practice-projects/
+* React Native: Build mobile apps with JavaScript and React!: http://www.reactnative.com/
