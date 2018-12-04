@@ -24,3 +24,7 @@ We edit App.js (the component where the whole app is contained) and modify it to
 
 Then we create the components folder inside of src.
 We create Sidebar.js and Editor.js in the components folder.
+
+The final project (my version) is in note-manager.
+
+Cassidy's final version is in markdown-manager.
