@@ -1,25 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import 'milligram';
+
+import Sidebar from './components/Sidebar';
+import Editor from './components/Editor';
 
 class App extends Component {
+  constructor(){
+    super();
+    this.change = this.change.bind(this);
+    this.addNote = this.addNote.bind(this);
+  }
+
+  addNote(){
+    console.log('added note!');
+  }
+
+  change(){
+    console.log('changed!');
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="App container">
+      <h1>marky mark</h1>
+        <div className="row">
+          <Sidebar addNote={this.addNote}/>
+          <Editor change={this.change} />
+          </div>
       </div>
     );
   }
