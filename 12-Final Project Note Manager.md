@@ -28,3 +28,9 @@ We create Sidebar.js and Editor.js in the components folder.
 The final project (my version) is in note-manager.
 
 Cassidy's final version is in markdown-manager.
+
+## To learn more ;-)
+
+* Build with React: http://buildwithreact.com
+* React Tutorials and Insights: https://www.codementor.io/community/topic/reactjs
+* React Reference: https://www.codecademy.com/articles/bwa-react-reference
