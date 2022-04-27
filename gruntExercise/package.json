@@ -11,7 +11,7 @@
   "dependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
-    "grunt": "^1.0.3",
+    "grunt": "^1.5.2",
     "grunt-babel": "^8.0.0",
     "grunt-contrib-uglify": "^4.0.0",
     "grunt-contrib-watch": "^1.1.0"
